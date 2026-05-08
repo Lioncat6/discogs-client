@@ -18,8 +18,8 @@ export type ArtistAliasEntry = {
     name: string; 
     resource_url: string
 }
-export type ArtistGroupEntry extends ArtistAliasEntry = { 
-    active: boolean; 
+export type ArtistGroupEntry = ArtistAliasEntry & {
+    active: boolean;
 }
 export type GetArtistResponse = {
     name: string;
